@@ -1,6 +1,6 @@
 ## 任务要求
 
-你需要完成`llama.py`中的`Engine`类. 并通过`test.py`的检查.
+你需要完成`llama.py`中的`Engine`类. 并通过`test.py`的检查. 你只需要实现batchsize=1的版本即可.
 
 你必须使用Llama-3-8B-Instruct的权重(通过设置环境变量HF_MODELS_CACHE).
 
