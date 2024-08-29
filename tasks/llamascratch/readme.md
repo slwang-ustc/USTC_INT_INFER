@@ -21,3 +21,4 @@ vllm的Llama.py
 5. modeling_llama中有很多冗余代码. 如果你完全复制了它, 最好能删节至最简状态.
 6. 分别报告prefill和decoding的时间. 
 7. 观察内存用量曲线; torch原生实现的llama中, 单层内存用量最大的tensor是什么?
+8. HF提供了LlamaTokenizer类进行分词. 但如果将test.py中的AutoTokenizer替换成LlamaTokenizer就会报错. 为什么? Llama, Llama2, Llama3的分词器有何差异?
