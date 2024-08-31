@@ -4,6 +4,10 @@
 
 你必须使用Llama-3-8B-Instruct的权重(通过设置环境变量HF_MODELS_CACHE).
 
+
+torch: 你不能使用和Attention有关的任何实现. 例如MultiAttention, 或者SDPA. 除此之外都可以使用
+transformers: 你仅能继承LlamaPretrainedModel, 使用其from_pretrained方法加载权重. 你不能使用其他任何类和函数.
+
 你需要在2周内完成该任务.
 
 参考资料:
