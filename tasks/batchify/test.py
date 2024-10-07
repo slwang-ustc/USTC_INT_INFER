@@ -8,7 +8,17 @@ if weight_path is None:
 
 engine = Engine(weight_path, DEVICE)
 batch = ["Hello how is it going?", "Is this a cat?"]
+result = engine.execute(batch, top_k = 3)
+
+print(f"top_k -3 result: {result}")
+
+result = engine.execute(batch, top_p = 0.8)
+
+print(f"top_p -0.8 result: {result}")
+
 result = engine.execute(batch)
 
-print(result)
+print(f"temperature result: {result}")
+
+
 

@@ -1,11 +1,13 @@
 #construct a llama model
+import sys
+sys.path.append('..')
 from transformers import LlamaPreTrainedModel, LlamaConfig, ROPE_INIT_FUNCTIONS, AutoTokenizer
 from transformers.models.llama.modeling_llama import ACT2FN
 import torch
 import torch.nn as nn
 from typing import Optional,List 
-from utils import DynamicCache,  Cache
-from utils import prepare_attention_mask
+from llamascratch.utils import DynamicCache,  Cache
+from llamascratch.utils import prepare_attention_mask
 import math
 
 
